@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SBK-Ib-oWx">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Achievements-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Achievements" id="BYZ-38-t0r" customClass="MedalCaseViewController" customModule="MedalCaseExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZwI-pO-q7h">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aeW-RC-vNt">
+                                    <size key="itemSize" width="300" height="128"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MedalCaseSectionHeaderView" id="HRT-cR-i1d" customClass="MedalCaseSectionHeaderView" customModule="MedalCaseExercise" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3Y-H0-nW5">
+                                            <rect key="frame" x="12" y="16.666666666666668" width="278" height="17.000000000000004"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <color key="textColor" name="sectionHeaderTitle"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Y1-Y0-g4o">
+                                            <rect key="frame" x="331" y="16.666666666666668" width="42" height="17.000000000000004"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="IyB-mV-bqU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" name="sectionHeaderPagination"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5Y1-Y0-g4o" firstAttribute="leading" secondItem="x3Y-H0-nW5" secondAttribute="trailing" constant="41" id="kVW-Fp-hzR"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5Y1-Y0-g4o" secondAttribute="trailing" constant="12" id="lgS-qi-N1K"/>
+                                        <constraint firstItem="x3Y-H0-nW5" firstAttribute="centerY" secondItem="HRT-cR-i1d" secondAttribute="centerY" id="mAm-Hm-PGQ"/>
+                                        <constraint firstItem="x3Y-H0-nW5" firstAttribute="leading" secondItem="HRT-cR-i1d" secondAttribute="leading" constant="12" id="vVz-9o-jKg"/>
+                                        <constraint firstItem="5Y1-Y0-g4o" firstAttribute="centerY" secondItem="HRT-cR-i1d" secondAttribute="centerY" id="x00-Qg-W9U"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="pageLabel" destination="5Y1-Y0-g4o" id="w3F-M1-rT3"/>
+                                        <outlet property="titleLabel" destination="x3Y-H0-nW5" id="NWB-6i-Ca4"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZwI-pO-q7h" secondAttribute="bottom" id="IJY-HN-nQ1"/>
+                            <constraint firstItem="ZwI-pO-q7h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d2D-oX-a8w"/>
+                            <constraint firstItem="ZwI-pO-q7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hXT-dN-gY4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZwI-pO-q7h" secondAttribute="trailing" id="l6w-29-XnQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Achievements" id="1M9-37-Fy5">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="w10-be-PAP">
+                            <color key="tintColor" name="navigationTitleColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="ellipsis" catalog="system" id="j5r-CA-Ayu">
+                            <color key="tintColor" name="navigationTitleColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainCollectionView" destination="ZwI-pO-q7h" id="6Ko-pv-mtb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wgL-qQ-cJq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SBK-Ib-oWx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="chevron.backward" catalog="system" id="Qo2-2V-IGW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tTs-9T-YEG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="navigationTitleColor"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GGo-8W-tW6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N44-b6-hnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <namedColor name="navigationTitleColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sectionHeaderPagination">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sectionHeaderTitle">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

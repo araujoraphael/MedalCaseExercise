@@ -1,0 +1,152 @@
+{
+    "medalTypes": [
+        "personalRecords",
+        "virtualRaces"
+    ],
+    "medals": [
+        {
+            "title": "Fastest 10k",
+            "achievement": {
+                "value": "42:30",
+                "type": "time"
+            },
+            "icon": "fastest_10k",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Fastest 5k",
+            "achievement": {
+                "value": "20:15",
+                "type": "time"
+            },
+            "icon": "fastest_5k",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Fastest Half Marathon",
+            "achievement": {
+                "value": "1:35:50",
+                "type": "time"
+            },
+            "icon": "fastest_half_marathon",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Fastest Marathon",
+            "achievement": {
+                "value": "3:45:10",
+                "type": "time"
+            },
+            "icon": "fastest_marathon",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Longest Run",
+            "achievement": {
+                "value": "50 km",
+                "type": "distance"
+            },
+            "icon": "longest_run",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Highest Elevation",
+            "achievement": {
+                "value": "1,000 m",
+                "type": "distance"
+            },
+            "icon": "highest_elevation",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Fastest Marathon",
+            "achievement": {
+                "value": "3:45:10",
+                "type": "time"
+            },
+            "icon": "fastest_marathon",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Longest Run",
+            "achievement": {
+                "value": "50 km",
+                "type": "distance"
+            },
+            "icon": "longest_run",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Highest Elevation",
+            "achievement": {
+                "value": "1,000 m",
+                "type": "distance"
+            },
+            "icon": "highest_elevation",
+            "type": "personalRecords"
+        },
+        {
+            "title": "Hakone Ekiden",
+            "achievement": {
+                "value": "-",
+                "type": "unachieved"
+            },
+            "icon": "hakone_ekiden",
+            "type": "virtualRaces"
+        },
+        {
+            "title": "Mizuno Singapore Ekiden",
+            "achievement": {
+                "value": "-",
+                "type": "unachieved"
+            },
+            "icon": "mizuno_singapore_ekiden",
+            "type": "virtualRaces"
+        },
+        {
+            "title": "Tokyo-Hakone Ekiden 2020",
+            "achievement": {
+                "value": "Completed",
+                "type": "distance"
+            },
+            "icon": "tokyo-hakone-ekiden-2020",
+            "type": "virtualRaces"
+        },
+        {
+            "title": "Virtual 10k Race",
+            "achievement": {
+                "value": "55:30",
+                "type": "time"
+            },
+            "icon": "virtual_10k_race",
+            "type": "virtualRaces"
+        },
+        {
+            "title": "Virtual 5k Race",
+            "achievement": {
+                "value": "25:10",
+                "type": "time"
+            },
+            "icon": "virtual_5k_race",
+            "type": "virtualRaces"
+        },
+        {
+            "title": "Virtual Half Marathon Race",
+            "achievement": {
+                "value": "2:10:45",
+                "type": "time"
+            },
+            "icon": "virtual_half_marathon_race",
+            "type": "virtualRaces"
+        },
+        {
+            "title": "Virtual Marathon Race",
+            "achievement": {
+                "value": "4:15:00",
+                "type": "time"
+            },
+            "icon": "virtual_marathon_race",
+            "type": "virtualRaces"
+        }
+    ]
+}
